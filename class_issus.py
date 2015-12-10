@@ -16,6 +16,7 @@
 #############################################################
 
 #use @property
+#############################################################
 # class Student(object):
 
 # 	@property
@@ -43,7 +44,18 @@ class Student(object):
         if value < 0 or value > 100:
             raise ValueError('score must between 0 ~ 100!')
         self._score = value
+	
+    def __init__(self,name):
+            self.name = name    
 
-s = Student()
-s.score = 9999.0
+    def __str__(self) :
+        return 'Student name is %s' % self.name
+
+    __repr__ = __str__
+
+
+s = Student('Wn')
+s.score = 99
 print s.score
+print s.name
+print s
