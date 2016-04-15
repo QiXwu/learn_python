@@ -36,6 +36,9 @@ def normalize(name):
 	return name.capitalize()
 	#return name.upper()[0]+name.lower()[1:]
 
+a = [x for x in xrange(1,10)]
+
+    pass
 L1 = ['adam', 'LISA', 'barT']
 L2 = list(map(normalize, L1))
 print L2

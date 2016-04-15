@@ -13,7 +13,7 @@ print f()
 
 
 #f1(), f2(), f3() returns 9, 9, 9 rather than 1, 4, 9?
-def count1():
+def count():
     fs = []
     for i in range(1, 4):
         def f():
